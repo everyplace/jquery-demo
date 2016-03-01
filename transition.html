@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>js!</title>
+    <script src="http://code.jquery.com/jquery-latest.js"></script>
+    <script>
+
+      $(document).ready(function(){
+
+        $(".box").click(function(){
+          $(".box").toggleClass("big");
+        })
+
+      });
+
+    </script>
+    <style>
+
+      .box {
+        width:200px;
+        height:200px;
+        background-color:pink;
+        -webkit-transition: width 2s, height 2s, background-color 10s;
+      }
+
+      .big {
+        width:400px;
+        height:400px;
+        background-color:green;
+      }
+
+    </style>
+  </head>
+  <body>
+
+    <div class="box"></div>
+
+  </body>
+</html>

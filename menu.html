@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>js!</title>
+    <script src="http://code.jquery.com/jquery-latest.js"></script>
+    <script>
+
+      $(document).ready(function(){
+
+        $("h2").click(function(){
+          $("nav").toggleClass("visible");
+        })
+
+      });
+
+    </script>
+    <style>
+      nav {
+        position:absolute;
+        left:-100px;
+        -webkit-transition: left 1s;
+      }
+
+      .visible {
+        left:0;
+      }
+    </style>
+  </head>
+  <body>
+
+    <h2>menu</h2>
+    <nav>
+      <ul>
+        <li>item 1</li>
+        <li>item 2</li>
+        <li>item 3</li>
+        <li>item 4</li>
+      </ul>
+    </nav>
+
+
+  </body>
+</html>

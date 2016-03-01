@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>js!</title>
+    <script src="http://code.jquery.com/jquery-latest.js"></script>
+    <script>
+      $(document).ready(function(){
+
+        $("ul").click(function(){
+
+          $(".light").toggleClass("on");
+
+        });
+
+      });
+    </script>
+    <style>
+
+      .light {
+        width:300px;
+        height:400px;
+        background-image:url("off.png");
+      }
+      .on { background-image:url("on.png"); }
+    </style>
+  </head>
+  <body>
+
+    <h1>Light Switch</h1>
+    <ul>
+      <li id="on">Turn the light on</li>
+      <li id="off">Turn the light off</li>
+    </ul>
+    <div class="light"></div>
+
+  </body>
+</html>
